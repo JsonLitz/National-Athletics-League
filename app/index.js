@@ -8,13 +8,6 @@ var USER_DATA = {
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-// var MainPageBanner = React.createClass({
-//   render:function(){
-//     return (
-//
-//     )
-//   }
-// })
 
 var ProfilePic = React.createClass({
   render: function () {
