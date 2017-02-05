@@ -3,8 +3,18 @@ p {
 }
 
 .nalIcon {
-  height: 50px;
-  padding-top:1%;
+  height: 55px;
+  padding-top:20px;
 }
 
-map
+.socialMedia {
+  padding-top: 20px;
+}
+
+div.menu-bar ul ul {
+  display: none;
+}
+
+div.menu-bar li:hover > ul {
+  display: block;
+}
