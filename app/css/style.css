@@ -11,6 +11,9 @@ p {
   padding-top: 20px;
 }
 
+.mapContainer {
+  padding:20px;
+}
 div.menu-bar ul ul {
   display: none;
 }
@@ -18,3 +21,8 @@ div.menu-bar ul ul {
 div.menu-bar li:hover > ul {
   display: block;
 }
+
+#map {
+      height: 400px;
+      width: 100%;
+     }
