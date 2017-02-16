@@ -1,6 +1,22 @@
 console.log('jquery is loaded')
 
-$( ".graph" ).click(function() {
-  console.log('graph button');
+$(document).ready(function(){
+      $('.carousel.carousel-slider').carousel({fullWidth: true});
+    });
 
+$( ".graph" ).click(function() {
+  $( "#result" ).load( "ajax/test.html" );
+  console.log('graph button');
 });
+
+function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
