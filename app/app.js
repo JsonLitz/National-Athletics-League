@@ -1,4 +1,4 @@
-console.log('jquery is loaded')
+var w3w_api = 'https://api.what3words.com/v2/languages?key=14Z2B21W';
 
 $(document).ready(function(){
   $('.carousel.carousel-slider').carousel({fullWidth: true});
@@ -18,29 +18,48 @@ function initMap() {
   });
       }
 
+  // var options =  {
+  //     key: '14Z2B21W',
+  //     lang: 'en'
+  //   };
+  // var w3w = new W3W.Geocoder(options);
 
-// var options =  {
-//     key: '14Z2B21W',
-//     lang: 'en'
-//   };
-//   var w3w = new W3W.Geocoder(options);
 
 
-var settings = {
-  "async": true,
-  "crossDomain": true,
-  "url": "https://api.what3words.com/v2/languages?key=14Z2B21W",
-  "method": "GET",
-  "headers": {}
-}
 
-$( ".graph" ).click(function() {
-  $( "#result" ).load( "ajax/test.html" );
-  console.log('graph button');
-  $.ajax(settings).done(function (response) {
-    console.log(response);
+
+$('.graph').on('click', function(event) {
+  $.ajax({
+    method: 'GET',
+    url: w3w_api,
+    dataType: 'json',
+    success: onClickReqSuccess
   });
 });
+
+function onClickReqSuccess (json) {
+  console.log(json);
+}
+
+// the following hits the w3w api and returns json object in console
+// var settings = {
+//   "async": true,
+//   "crossDomain": true,
+//   "url": "https://api.what3words.com/v2/languages?key=14Z2B21W",
+//   "method": "GET",
+//   "headers": {},
+// };
+
+// $( ".graph" ).click(function() {
+//   $( "#result" ).load( "ajax/test.html" );
+//   console.log('graph button');
+//   $.ajax(settings).done(function (response) {
+//     console.log(response);
+//
+//   });
+// });
+
+
 
 // $(".map_data").click(function()  {
 //   console.log('click function working')
