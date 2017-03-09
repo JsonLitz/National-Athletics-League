@@ -1,3 +1,6 @@
+body {
+}
+
 p {
   color: green;
 }
@@ -12,10 +15,11 @@ p {
 }
 
 .mapContainer {
-  padding:20px;
-  width: 75%;
   margin: 0 auto;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
+  /*padding:20px;*/
+  background-color: #50608F;
+
 }
 div.menu-bar ul ul {
   display: none;
@@ -29,3 +33,30 @@ div.menu-bar li:hover > ul {
       height: 400px;
       width: 100%;
      }
+
+.mapTitle {
+  margin:0 auto;
+}
+
+.map_data {
+  background-color: #2F4073;
+}
+
+.footer {
+  background-color: #50608F;
+}
+
+
+#floating-panel {
+  position: relative;
+  top: 10px;
+  left: 25%;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;
+}
