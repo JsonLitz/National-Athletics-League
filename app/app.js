@@ -1,9 +1,8 @@
-var w3w_api = 'https://api.what3words.com/v2/languages?key=14Z2B21W';
+var w3w_api = 'https://api.what3words.com/v2/forward?addr=index.home.raft&display=full&format=json&key=14Z2B21W';
 
 $(document).ready(function(){
   $('.carousel.carousel-slider').carousel({fullWidth: true});
   });
-
 
 
 function initMap() {
@@ -38,7 +37,7 @@ $('.graph').on('click', function(event) {
 });
 
 function onClickReqSuccess (json) {
-  console.log(json);
+  console.log(json.map);
 }
 
 // the following hits the w3w api and returns json object in console
