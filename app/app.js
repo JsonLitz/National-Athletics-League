@@ -5,7 +5,6 @@ $(document).ready(function(){
   });
 
 
-
 function initMap() {
   var sanFrancisco = {lat: 37.773, lng: -122.431};
   var map = new google.maps.Map(document.getElementById('map'), {

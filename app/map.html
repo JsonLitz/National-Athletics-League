@@ -11,16 +11,14 @@
 
 <body>
   <div class="navbar-fixed nav"><!-- nav bar -->
-    <nav class="black" role="navigation">
+    <nav class="indigo darken-4" role="navigation">
       <div class="map_data">
-        <a class="waves-effect waves-teal btn-flat btn-large white">
+        <!-- <a class="waves-effect waves-teal btn-flat btn-large white">
           <i class="material-icons ">language</i>
-        </a>
-        <a class="waves-effect waves-teal btn-flat btn-large white">
-          <i class="material-icons graph">trending_up</i></a>
-        <a id="logo-container" href="#" class=" brand-logo center ">
-          <img src="images/nal_Icon.png" class="nalIcon" alt="" />
-        </a>
+        </a> -->
+        <!-- <h2>National Athletics League</h2> -->
+        <!-- <a class="waves-effect waves-teal btn-flat btn-large white">
+          <i class="material-icons graph">trending_up</i></a> -->
         <ul class="right hide-on-med-and-down socialMedia">
           <li>
             <a href="Facebook"><img src="images/facebook.png" alt="" /></a>
@@ -48,37 +46,24 @@
     </div>
     </nav>
   </div>
-  <div class="banner">
-    <div class="carousel carousel-slider center" data-indicators="true">
-      <div class="carousel-fixed-item center">
-        <a class="btn waves-effect white grey-text darken-text-2">button</a>
-      </div>
-      <div class="carousel-item red white-text" href="#one!">
-        <h2>Map</h2>
-        <p class="white-text">This links the Map</p>
-      </div>
-      <div class="carousel-item amber white-text" href="#two!">
-        <h2>Data</h2>
-        <p class="white-text">This links the Data</p>
-      </div>
-      <div class="carousel-item green white-text" href="#three!">
-        <h2>Sign Up!</h2>
-        <p class="white-text">This is your email submission form</p>
-      </div>
-      <div class="carousel-item blue white-text" href="#four!">
-        <h2>Fourth Panel</h2>
-        <p class="white-text">This is your fourth panel</p>
-      </div>
-    </div>
-  </div>
+
 
   <div class="mapContainer"><!-- Map -->
-    <h3> Google Maps </h3>
+    <div class="row">
+    <form class="col s12">
+      <div class="row" id="floating-panel">
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">What3Words</label>
+        </div>
+      </div>
+    </form>
+  </div>
     <div id="map"></div>
   </div>
 
     <!-- footer -->
-  <footer class="page-footer teal lighten-3">
+  <footer class="page-footer indigo">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
@@ -88,15 +73,6 @@
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
           <ul>
             <li><a class="white-text" href="#!">Link 1</a></li>
             <li><a class="white-text" href="#!">Link 2</a></li>
@@ -122,3 +98,28 @@
 </body>
 
 </html>
+
+
+<!-- <div class="banner"> Saving slider for later
+  <div class="carousel carousel-slider center" data-indicators="true">
+    <div class="carousel-fixed-item center">
+      <a class="btn waves-effect white grey-text darken-text-2">button</a>
+    </div>
+    <div class="carousel-item red white-text" href="#one!">
+      <h2>Map</h2>
+      <p class="white-text">This links the Map</p>
+    </div>
+    <div class="carousel-item amber white-text" href="#two!">
+      <h2>Data</h2>
+      <p class="white-text">This links the Data</p>
+    </div>
+    <div class="carousel-item green white-text" href="#three!">
+      <h2>Sign Up!</h2>
+      <p class="white-text">This is your email submission form</p>
+    </div>
+    <div class="carousel-item blue white-text" href="#four!">
+      <h2>Fourth Panel</h2>
+      <p class="white-text">This is your fourth panel</p>
+    </div>
+  </div>
+</div> -->
