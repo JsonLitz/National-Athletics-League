@@ -48,16 +48,25 @@ function onClickReqSuccess (json) {
 //   "method": "GET",
 //   "headers": {},
 // };
-
-// $( ".graph" ).click(function() {
+//
+//
 //   $( "#result" ).load( "ajax/test.html" );
-//   console.log('graph button');
 //   $.ajax(settings).done(function (response) {
 //     console.log(response);
 //
 //   });
-// });
 
+  var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "https://api.what3words.com/v2/forward?addr=index.home.raft&display=full&format=json&key=14Z2B21W",
+    "method": "GET",
+    "headers": {}
+  };
+
+  $.ajax(settings).done(function (response) {
+    console.log(response);
+  });
 
 
 // $(".map_data").click(function()  {

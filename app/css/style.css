@@ -46,7 +46,7 @@ div.menu-bar li:hover > ul {
   background-color: #50608F;
 }
 
-
+/*
 #floating-panel {
   position: relative;
   top: 10px;
@@ -59,4 +59,10 @@ div.menu-bar li:hover > ul {
   font-family: 'Roboto','sans-serif';
   line-height: 30px;
   padding-left: 10px;
-}
+}*/
+
+html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
