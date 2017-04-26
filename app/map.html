@@ -1,102 +1,98 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <title>Nathional Athletics League</title>
-  <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.css">
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>Nathional Athletics League</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.css">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="/css/responsive.css" type="text/css" rel="stylesheet" >
+    <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+  </head>
 
-<body>
-  <div class="navbar-fixed nav"><!-- nav bar -->
-    <nav class="indigo darken-4" role="navigation">
-      <div class="map_data">
-        <!-- <a class="waves-effect waves-teal btn-flat btn-large white">
-          <i class="material-icons ">language</i>
-        </a> -->
-        <!-- <h2>National Athletics League</h2> -->
-        <!-- <a class="waves-effect waves-teal btn-flat btn-large white">
-          <i class="material-icons graph">trending_up</i></a> -->
-        <ul class="right hide-on-med-and-down socialMedia">
-          <li>
-            <a href="Facebook"><img src="images/facebook.png" alt="" /></a>
-          </li>
-          <li>
-            <a href="Twitter"><img src="images/twitter.png" alt="" /></a>
-          </li>
-          <li>
-            <a href="Instagram"><img src="images/Instagram_Icon.png" alt="" /></a>
-          </li>
-        </ul>
+  <body>
+    <div class="navbar-fixed nav"><!-- nav bar -->
+      <nav class="indigo darken-4" role="navigation">
+        <div class="map_data">
+          <!-- <a class="waves-effect waves-teal btn-flat btn-large white">
+            <i class="material-icons ">language</i>
+          </a> -->
+          <!-- <h2>National Athletics League</h2> -->
+          <!-- <a class="waves-effect waves-teal btn-flat btn-large white">
+            <i class="material-icons graph">trending_up</i></a> -->
+          <ul class="right hide-on-med-and-down socialMedia">
+            <li>
+              <a href="Facebook"><img src="images/facebook.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="Twitter"><img src="images/twitter.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="Instagram"><img src="images/Instagram_Icon.png" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-wrapper container">
+          <ul id="nav-mobile" class="side-nav">
+            <li>
+              <a href="Facebook"><img src="images/facebook.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="Twitter"><img src="images/twitter.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="Instagram"><img src="images/Instagram_Icon.png" alt="" /></a>
+            </li>
+          </ul>
       </div>
-      <div class="nav-wrapper container">
-        <ul id="nav-mobile" class="side-nav">
-          <li>
-            <a href="Facebook"><img src="images/facebook.png" alt="" /></a>
-          </li>
-          <li>
-            <a href="Twitter"><img src="images/twitter.png" alt="" /></a>
-          </li>
-          <li>
-            <a href="Instagram"><img src="images/Instagram_Icon.png" alt="" /></a>
-          </li>
-        </ul>
+      </nav>
     </div>
-    </nav>
-  </div>
 
-  <div id="wrapper">
-     <div id="google_map">
+    <div id="wrapper">
+       <div id="google_map">
+       </div>
+       <div id="over_map">
+       </div>
+    </div>
 
-     </div>
-
-     <div id="over_map">
-
-     </div>
-  </div>
-
-  <div class="mapContainer"><!-- Map -->
-    <div class="row">
-    <form class="col s6">
+    <div class="mapContainer"><!-- Map -->
       <div class="row">
-        <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name">What3Words</label>
+      <form class="col s6">
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">What3Words</label>
+          </div>
+        </div>
+      </form>
+    </div>
+      <div id="map"></div>
+    </div>
+      <!-- footer -->
+    <footer class="page-footer indigo center">
+      <div class="container ">
+        <div class="row">
+          <div class="company-bio">
+            <h5 class="white-text ">Company Bio</h5>
+            <p class="grey-text text-lighten-4">Trust fund artisan yuccie copper mug. Thundercats ennui drinking vinegar small batch bicycle rights brooklyn. Cliche deep v gastropub mustache, chambray YOLO humblebrag aesthetic fap sustainable man braid next level distillery. Migas
+            freegan roof party polaroid. Franzen prism tousled subway tile freegan chartreuse. </p>
+          </div>
         </div>
       </div>
-    </form>
-  </div>
-    <div id="map"></div>
-  </div>
-
-    <!-- footer -->
-  <footer class="page-footer indigo center">
-    <div class="container center">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">Trust fund artisan yuccie copper mug. Thundercats ennui drinking vinegar small batch bicycle rights brooklyn. Cliche deep v gastropub mustache, chambray YOLO humblebrag aesthetic fap sustainable man braid next level distillery. Migas
-          freegan roof party polaroid. Franzen prism tousled subway tile freegan chartreuse. </p>
+      <div class="footer-copyright center">
+        <div class="container">
+          Made by <a class="orange-text text-lighten-3" href="https://github.com/JsonLitz">jSon</a>
         </div>
       </div>
-    </div>
-    <div class="footer-copyright center">
-      <div class="container">
-        Made by <a class="orange-text text-lighten-3" href="https://github.com/JsonLitz">jSon</a>
-      </div>
-    </div>
-  </footer>
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-  <script async defer
- src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script>
-  <script src="//[path-to-wrapper]/dist/W3W.Geocoder.min.js" type="text/javascript"></script>
-  <!-- <script src="dist/index_bundle.js"></script> -->
-  <script src="app.js"></script>
-</body>
-
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script async defer
+   src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script>
+    <script src="//[path-to-wrapper]/dist/W3W.Geocoder.min.js" type="text/javascript"></script>
+    <script src="app.js"></script>
+  </body>
 </html>
 
 
