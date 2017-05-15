@@ -45,3 +45,5 @@ function onClickReqSuccess (json) {
     console.log(response.geometry.lng);
 
   });
+
+  $(".button-collapse").sideNav();

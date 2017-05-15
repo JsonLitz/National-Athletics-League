@@ -54,7 +54,6 @@ div.menu-bar li:hover > ul {
 }
 
 .company-bio {
-  width: 50%;
   text-align: center;
 
 }
@@ -65,6 +64,25 @@ div.menu-bar li:hover > ul {
     body {
       width:100%;
       background-color: #6495ED;
-      
+
     }
 	}
+
+.map_inputs {
+  margin:none;
+}
+
+.form {
+  text-align: center;
+}
+
+.places {
+  border: 2px dotted black;
+  height: 55px;
+  text-align: center;
+  background-color: white:
+}
+
+.place {
+
+}
