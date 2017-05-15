@@ -15,15 +15,7 @@ function initMap() {
     position: sanFrancisco,
     map: map
   });
-      }
-
-  // var options =  {
-  //     key: '14Z2B21W',
-  //     lang: 'en'
-  //   };
-  // var w3w = new W3W.Geocoder(options);
-
-
+}
 
 
 
@@ -40,27 +32,18 @@ function onClickReqSuccess (json) {
   console.log(json.map);
 }
 
-// the following hits the w3w api and returns json object in console
-// var settings = {
-//   "async": true,
-//   "crossDomain": true,
-//   "url": "https://api.what3words.com/v2/languages?key=14Z2B21W",
-//   "method": "GET",
-//   "headers": {},
-// };
+  var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "https://api.what3words.com/v2/forward?addr=index.home.raft&display=full&format=json&key=14Z2B21W",
+    "method": "GET",
+    "headers": {}
+  };
 
-// $( ".graph" ).click(function() {
-//   $( "#result" ).load( "ajax/test.html" );
-//   console.log('graph button');
-//   $.ajax(settings).done(function (response) {
-//     console.log(response);
-//
-//   });
-// });
+  $.ajax(settings).done(function (response) {
+    console.log(response.geometry.lat);
+    console.log(response.geometry.lng);
 
+  });
 
-
-// $(".map_data").click(function()  {
-//   console.log('click function working')
-//
-// });
+  $(".button-collapse").sideNav();

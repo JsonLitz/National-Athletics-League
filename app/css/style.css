@@ -5,6 +5,12 @@ p {
   color: green;
 }
 
+html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
 .nalIcon {
   height: 55px;
   padding-top:20px;
@@ -15,6 +21,7 @@ p {
 }
 
 .mapContainer {
+  width:960px;
   margin: 0 auto;
   /*border: 1px solid black;*/
   /*padding:20px;*/
@@ -46,17 +53,36 @@ div.menu-bar li:hover > ul {
   background-color: #50608F;
 }
 
-
-#floating-panel {
-  position: relative;
-  top: 10px;
-  left: 25%;
-  z-index: 5;
-  background-color: #fff;
-  padding: 5px;
-  border: 1px solid #999;
+.company-bio {
   text-align: center;
-  font-family: 'Roboto','sans-serif';
-  line-height: 30px;
-  padding-left: 10px;
+
+}
+@media screen and (max-width: 959px) {
+    .mapContainer{
+      width:90%;
+    }
+    body {
+      width:100%;
+      background-color: #6495ED;
+
+    }
+	}
+
+.map_inputs {
+  margin:none;
+}
+
+.form {
+  text-align: center;
+}
+
+.places {
+  border: 2px dotted black;
+  height: 55px;
+  text-align: center;
+  background-color: white:
+}
+
+.place {
+
 }
